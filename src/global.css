@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "JaapokkiSubtract";
+	src: url(/JaapokkiSubtract.ttf) format("truetype");
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+
+	@apply w-full h-full p-0 m-0 bg-gray-900;
+}
+
+@layer utilities {
+	.root {
+		scroll-behavior: smooth;
+
+		width: 100vw;
+		height: 100vh;
+
+		overflow-x: hidden;
+	}
+
+	.blur-effect {
+		backdrop-filter: blur(4px);
+	}
+
+	.button-gradient {
+		background-image: linear-gradient(#B2D3C2 0%, #728C69 100%);
+	}
+
+	.topbar {
+		@apply w-full h-16 left-0 top-0 bg-green-900;
+	}
+
+	.page {
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.h-body {
+		width: 100%;
+		height: calc(100vh - 3rem);
+	}
+}
