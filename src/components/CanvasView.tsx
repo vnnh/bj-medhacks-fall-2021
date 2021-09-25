@@ -1,13 +1,12 @@
 import { Loader, useFBX } from "@react-three/drei";
-import { Canvas, extend, useThree } from "@react-three/fiber";
-import React, { Suspense, useContext } from "react";
+import { Canvas, extend } from "@react-three/fiber";
+import React, { Suspense } from "react";
 import * as THREE from "three";
 import { MeshPhongMaterial, Vector3 } from "three";
 import { Lightmap } from "src/three/Lightmap";
 import { DragControls } from "three/examples/jsm/controls/DragControls";
 import { FlyControls } from "src/three/controls/FlyControls";
 import surgeryScenarioDescription from "src/scenarios/surgery_room";
-import { CurrentContext } from "src/context/current";
 
 extend({ DragControls });
 
@@ -104,7 +103,7 @@ class CanvasView extends React.PureComponent<{ setCurrentIndex: React.Dispatch<R
 			<>
 				<Canvas
 					frameloop={"always"}
-					camera={{ position: new Vector3(0, 2, 10) }}
+					camera={{ position: new Vector3(10, 10, -10) }}
 					shadows
 					dpr={[1, 1.5]}
 					gl={{ alpha: false }}
