@@ -44,7 +44,7 @@ const surgeryScenarioDescription: ObjectDescription[] = [
 		ScaleNumerator: 1,
 	},
 	{
-		Name: "NarrowForceps",
+		Name: "Narrow Forceps",
 		Path: `${pathPrefix}NarrowForceps.fbx`,
 		Description: "Slimmed-down forceps utilized for grabbing smaller objects.",
 		Position: [-4.2, 4.45, 1.9],
@@ -52,7 +52,7 @@ const surgeryScenarioDescription: ObjectDescription[] = [
 		ScaleNumerator: 1,
 	},
 	{
-		Name: "CurvedForceps",
+		Name: "Curved Forceps",
 		Path: `${pathPrefix}CurvedForceps.fbx`,
 		Description: "Forceps designed for clamping and holding down blood vessels.",
 		Position: [-4.5, 4.45, 1],
@@ -134,7 +134,8 @@ const surgeryScenarioDescription: ObjectDescription[] = [
 	{
 		Name: "IV Drip",
 		Path: `${pathPrefix}IVDrip.fbx`,
-		Description: "A bag containing essential fluids that introduces the fluids through the bloodstream via a catheter.",
+		Description:
+			"A bag containing essential fluids that introduces the fluids through the bloodstream via a catheter.",
 		Position: [3.5, 0.1, 4],
 		Rotation: [-Math.PI / 2, Math.PI / 2, 0],
 		ScaleNumerator: 5,
