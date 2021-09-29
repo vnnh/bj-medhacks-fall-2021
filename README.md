@@ -1,5 +1,5 @@
-# MedicIn
-Ten hour hackathon.
+# MedicIn - *result of a ten hour hackathon*
+A web application to present a method of improving the healthcare field by means of exposing healthcare students to hospital layouts and equipment virtually.
 
 <img width="960" alt="page1" src="https://user-images.githubusercontent.com/90565423/134823287-7c474950-b50a-4a63-8471-1280d82a35e8.PNG">
 
